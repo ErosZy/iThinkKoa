@@ -5,7 +5,7 @@
 //所以koa里面还可以用yield *next
 
 let app = {
-    version: "0.1",
+    version: "0.00000000000000000000000000001",
     _middleware: [],
     use(fn) {
         this._middleware.push(fn);
