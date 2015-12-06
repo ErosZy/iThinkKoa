@@ -10,7 +10,7 @@ let app = {
     use(fn) {
         this._middleware.push(fn);
     },
-    next() {
+    _next() {
         let mw = this._middleware;
         let len = mw.length;
         let index = 0;
@@ -28,7 +28,7 @@ let app = {
         fn(index);
     },
     start() {
-        this.next();
+        this._next();
     }
 };
 
